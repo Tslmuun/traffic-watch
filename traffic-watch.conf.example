@@ -1,0 +1,18 @@
+# traffic-watch example config
+# Copy to /root/traffic-watch.conf and fill in your own values.
+# Keep the real file 0600 (it holds the mailbox password).
+SMTP_HOST=mail.example.com
+SMTP_PORT=465
+SMTP_USER=system@example.com
+SMTP_PASS=change-me
+ALERT_TO=you@example.com
+THRESHOLD_5MIN_GB=5
+THRESHOLD_15MIN_GB=8
+THRESHOLD_30MIN_GB=12
+THRESHOLD_60MIN_GB=20
+COOLDOWN_MIN=60
+RETRY_COUNT=3
+RETRY_DELAY_SEC=5
+HISTORY_FILE=/root/traffic-watch-history.csv
+HISTORY_MAX_LINES=10000
+PENDING_MAX=20
